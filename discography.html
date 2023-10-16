@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YUI Discography</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;500;700&family=DM+Sans:opsz,wght@9..40,100;9..40,300;9..40,400;9..40,600;9..40,800&family=Lato:wght@100&family=Poppins:wght@300;500;700&family=Rajdhani:wght@600&family=Syne:wght@800&display=swap');
+
+        header {
+            background-color: #ffffff; 
+            padding: 5px; 
+            top: 0;
+            width: 100%;       }
+        h1 {
+            font-family: Barlow;
+            font-weight: 300;
+            letter-spacing: 5px;
+            text-align: center;
+        }
+        body {
+            background-color: rgb(204, 204, 204);
+            justify-content: center;
+        }
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .container {
+            display: grid;
+            width: 500px;
+            height: 300px;
+            margin-bottom: 200px;
+            
+        }
+        .info {
+            display: grid;
+            grid-template-columns: 500px 300px ;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 1px 1px 10px #2003033e;
+            border-radius: 7px;
+        }
+        .single-container {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            column-gap: 50px;
+            row-gap: 10px;
+            background-color: rgb(255, 255, 255);
+            margin: 10px;
+            justify-content: center;
+        }
+        .album-container {
+            background-color: rgb(255, 255, 255);
+            margin: 10px;
+
+        }
+  
+        #singles, #album{
+            font-family: Barlow;
+            font-weight: 700;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-left: 20px;
+            letter-spacing: 3px;
+
+        }
+        .single {
+            width: 100px;
+        }
+        .single img{
+            width: 100px;
+            margin-bottom: 0px;
+            cursor: pointer;
+            transition: opacity 0.5s;
+        }
+        .single img:hover {
+            opacity: 0.7;
+        }
+        .title, .date, .release-info {
+            font-family: Poppins;
+        }
+
+        .title{
+            font-size: 10px;
+            font-weight: 700;
+        }
+        .date {
+            font-size: 8px;
+            color: gray;
+        }
+        .release-info {
+            font-size: 5px;
+            color: gray;
+        }
+
+        .album-container img {
+            width: 180px;
+            justify-content: center;
+            cursor: pointer;
+            transition: opacity 0.5s;
+        }
+
+        .album-container img:hover {
+            opacity: 0.7;
+
+        }
+
+        .album-title, .album-date, .album-info {
+            font-family: Poppins;
+        }
+        .album-info {
+            text-align: center;
+        }
+        .album-title {
+            font-size: 19px;
+            font-weight: 700;
+
+        }
+        .album-date {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 13px;
+        }
+        .album-text {
+            font-size: 10px;
+            padding-inline: 40px;
+            margin-bottom: 15px;
+
+        }
+        .album-container ul {
+            font-size: 8px;
+        }
+        .tracklist {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .tracklist ul {
+            font-family: Poppins;
+        }
+        .album-cover {
+            text-align: center;
+        }
+        .corpo {
+            border: black;
+            border-style: solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body> 
+        <header>
+            <h1>YUI DISCOGRAPHY | 2004 - 2012</h1>
+        </header>
+    <hr>
+     
+    <div class="corpo">
+        <div class="container">
+            <div class="info">
+                <div class="singles">
+                    <p id="singles">SINGLES</p>
+                    <div class="single-container">
+                        <div class="single">
+                            <img src="pics/itshappyline.jpg" alt="feel-my-soul">
+                            <p class="title">It's happy line</p>
+                            <p class="date">2004.12.24</p>
+                            <p class="release-info">YUI first independant single!</p>
+                        </div>
+                        <div class="single">
+                            <img src="pics/feelmysoul.jpg" alt="feel-my-soul">
+                            <p class="title">feel my soul</p>
+                            <p class="date">2005.2.23</p>
+                            <p class="release-info">天使の琴声 17歳シンガーソングライター フジテレビ系月9ドラマ 主題歌でメジャーデビュー！！</p>
+                        </div>
+    
+                        <div class="single">
+                            <img src="pics/tomorrowsway.jpg" alt="feel-my-soul">
+                            <p class="title">Tomorrow's way</p>
+                            <p class="date">2005.6.22</p>
+                            <p class="release-info">2005年夏休み 松竹・東急系全国ロードショー「HINOKIO」主題歌</p>
+                        </div>
+                        <div class="single">
+                            <img src="pics/life.jpg" alt="feel-my-soul">
+                            <p class="title">LIFE</p>
+                            <p class="date">2005.11.9</p>
+                            <p class="release-info">18歳シンガーソングライターYUI待望のサードシングル</p>
+                        </div>
+                        <div class="single">
+                            <img src="pics/tokyo.jpeg" alt="feel-my-soul">
+                            <p class="title">TOKYO</p>
+                            <p class="date">2006.1.18</p>
+                            <p class="release-info">彼女の決意に涙する名曲</p>
+                        </div>                    
+                    </div>   
+                </div>
+    
+                <div class="album">
+                    <p id="album">ALBUM</p>
+                    <div class="album-container">
+                        <div class="album-cover">
+                            <img src="pics/fmty.jpg" alt="">
+                        </div>
+                        <div class="album-info">
+                            <p class="album-title">FROM ME TO YOU</p>
+                            <p class="album-date">2006.2.22</p>
+                            <p class="album-text">問い合わせ殺到!!YUIファーストアルバムがついに完成しました!!</p>
+                        </div>
+                        <div class="tracklist">
+                            <ul>
+                                <li>Merry・Go・Round</li>
+                                <li>feel my soul</li>
+                                <li>Ready to love</li>
+                                <li>Swing of lie</li>
+                                <li>LIFE</li>
+                                <li>Blue wind</li>
+                                <li>I can't say</li>
+                            </ul>
+    
+                            <ul>
+                                <li>Simply white</li>
+                                <li>Just my way</li>
+                                <li>Tomorrow's way</li>
+                                <li>I know</li>
+    
+                            </ul>
+                        </div>
+    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="info">
+                <div class="singles">
+                    <p id="singles">SINGLES</p>
+                    <div class="single-container">
+                        <div class="single">
+                            <img src="pics/goodbyedays.jpg" alt="feel-my-soul">
+                            <p class="title">Good-bye days</p>
+                            <p class="date">2006.6.14</p>
+                            <p class="release-info">映画「タイヨウのうた」主題歌
+                            </p>
+                        </div>
+                        <div class="single">
+                            <img src="pics/irememberyou.jpg" alt="feel-my-soul">
+                            <p class="title">I remember you</p>
+                            <p class="date">2006.9.20</p>
+                            <p class="release-info">せつなくも素直に描いたオリジナルソング。この秋に贈ります。</p>
+                        </div>
+    
+                        <div class="single">
+                            <img src="pics/irememberyouLE.jpg" alt="feel-my-soul">
+                            <p class="title">I remember you (Limited Edition)</p>
+                            <p class="date">2006.9.20</p>
+                            <p class="release-info">せつなくも素直に描いたオリジナルソング。この秋に贈ります。</p>
+                        </div>
+    
+                        <div class="single">
+                            <img src="pics/rollingstar.jpg" alt="feel-my-soul">
+                            <p class="title">Rolling star</p>
+                            <p class="date">2007.1.17</p>
+                            <p class="release-info">とにかくゴキゲンなロックンロールナンバー!!YUI初の応援歌になりました!!</p>
+                        </div>
+                        <div class="single">
+                            <img src="pics/cherry.jpg" alt="feel-my-soul">
+                            <p class="title">CHE.R.RY</p>
+                            <p class="date">2007.3.7</p>
+                            <p class="release-info">☆甘酸っぱい果実のような春のうたを贈ります☆</p>
+                        </div>
+    
+                        <div class="single">
+                            <img src="pics/cherryLE.jpg" alt="feel-my-soul">
+                            <p class="title">CHE.R.RY <br> (Limited Edition)</p>
+                            <p class="date">2007.3.7</p>
+                            <p class="release-info">☆甘酸っぱい果実のような春のうたを贈ります☆</p>
+                        </div>
+                      
+                    </div>   
+                </div>
+    
+                <div class="album">
+                    <p id="album">ALBUM</p>
+                    <div class="album-container">
+                        <div class="album-cover">
+                            <img src="pics/cbml.jpg" alt="">
+                        </div>
+                        <div class="album-info">
+                            <p class="album-title">CAN'T BUY MY LOVE</p>
+                            <p class="album-date">2007.4.4</p>
+                            <p class="album-text">私の愛するモノは　カンタンには譲れない　ＹＵＩ待望のセカンドアルバム完成</p>
+                        </div>
+                        <div class="tracklist">
+                            <ul>
+                                <li>How crazy</li>
+                                <li>Rolling star</li>
+                                <li>It’s all right</li>
+                                <li>I remember you</li>
+                                <li>RUIDO</li>
+                                <li>Thank you My teens</li>
+                            </ul>
+    
+                            <ul>
+                                <li>Umbrella</li>
+                                <li>Happy Birthday to you you</li>
+                                <li>Winding road</li>
+                                <li>Good-bye days</li>
+                                <li>Why?</li>
+    
+                            </ul>
+                        </div>
+    
+                    </div>
+                    
+                </div>
+            </div>
+    </div>
+    
+
+    </div>
+
+
+</body>
+</html>
